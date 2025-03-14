@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    background-color: #cccccc;
+}
+
+div{
+    border: 1px solid #ff0000;
+    transition: .7s;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+div:hover{
+    background-image: linear-gradient(to right, #000000, #000088);
+}
+
