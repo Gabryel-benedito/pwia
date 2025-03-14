@@ -17,6 +17,20 @@ div{
 }
 
 div:hover{
-    background-image: linear-gradient(to right, #000000, #000088);
+    background-color: #000088;
+    height: 400px;
+    width: 400px;
 }
 
+img{
+    width: 200px;
+    transition: .7s;
+    height: 200px;
+    margin: auto;
+}
+
+div:hover > img{
+    background-color: #000088;
+    height: 400px;
+    width: 400px;
+}
