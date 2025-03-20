@@ -10,27 +10,4 @@ html, body{
 
 div{
     border: 1px solid #ff0000;
-    transition: .7s;
-    width: 200px;
-    height: 200px;
-    margin: auto;
-}
-
-div:hover{
-    background-color: #000088;
-    height: 400px;
-    width: 400px;
-}
-
-img{
-    width: 200px;
-    transition: .7s;
-    height: 200px;
-    margin: auto;
-}
-
-div:hover > img{
-    background-color: #000088;
-    height: 400px;
-    width: 400px;
 }
