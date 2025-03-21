@@ -9,17 +9,75 @@ html, body{
 }
 
 
+.menu{
+    background-color: #666666;
+    color: #ffffff;
+    border: 1px solid;
+    display: flex;
+}
+
+.item-menu{
+    width: 500px;
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+}
+
+
+
+.link-menu{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+
+.item-menu > .link-menu:hover{
+    cursor: pointer;
+    color: #17167a;
+    text-decoration: underline;
+    font-size: 28px;
+}
+
+
 
 .card{
-    width: 368px;
-    height: 500px;
+    width: 268px;
+    height: 520px;
     background-color: #ffffff;
+    transition: 1s;
+}
+
+.card:hover{
+    background-color: #3a312a;
+    width: 368px;
+    height: 590px;
+}
+
+.card:hover .img-card{
+    width: 368px;
+    height: 368px;
+}
+
+.card:hover .descricao{
+    color: #ffffff;
+}
+
+.card:hover .pagamento{
+    color: #aaaaaa;
+}
+
+.card:hover .preco{
+    color: #ce8a0d;
 }
 
 .img-card{
-    width: 368px;
+    width: 268px;
     height: 268px ;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .descricao{
@@ -27,7 +85,7 @@ html, body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding:10px 5px ;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .preco{
@@ -52,4 +110,10 @@ html, body{
     height: 25px;
     font-size: 15px;
     text-align: center;
+}
+
+.button-card:hover{
+    cursor: pointer;
+    background-color: #ff3613;
+    transition: 0.35s;
 }
