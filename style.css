@@ -78,6 +78,7 @@ html, body{
     width: 268px;
     height: 268px ;
     margin-top: 20px;
+    transition: 1s;
 }
 
 .descricao{
