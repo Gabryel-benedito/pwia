@@ -9,6 +9,7 @@ html, body{
 }
 
 
+
 .menu{
     background-color: #666666;
     color: #ffffff;
@@ -43,12 +44,22 @@ html, body{
 }
 
 
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 .card{
     width: 268px;
-    height: 520px;
+    height: 268px;
     background-color: #ffffff;
     transition: 1s;
+    overflow: hidden;
+    margin: 40px;
 }
 
 .card:hover{
