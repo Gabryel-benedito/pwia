@@ -9,13 +9,39 @@ html, body{
 }
 
 
+.tit{
+    background-color: #666666;
+}
+
+.tit h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #161466;
+    text-shadow: 2px 3px 7px #000;
+}
+
+.tit p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #161466;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
 
 .menu{
     background-color: #666666;
     color: #ffffff;
-    border: 1px solid;
     display: flex;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
+
+
 
 .item-menu{
     width: 500px;
@@ -45,7 +71,7 @@ html, body{
 
 
 .container{
-    width: 80%;
+    width: 75%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -59,13 +85,14 @@ html, body{
     background-color: #ffffff;
     transition: 1s;
     overflow: hidden;
-    margin: 40px;
+    margin: 50px;
 }
 
 .card:hover{
     background-color: #3a312a;
     width: 368px;
     height: 590px;
+    margin: 0;
 }
 
 .card:hover .img-card{
