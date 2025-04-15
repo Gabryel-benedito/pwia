@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    font-family: "Lora", serif;
 }
 
 html, body{
@@ -11,30 +16,62 @@ html, body{
 
 .tit{
     background-color: #666666;
+    width: 100%;
+    display: flex;
+    justify-items: center;
 }
 
-.tit h1{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    color: #161466;
-    text-shadow: 2px 3px 7px #000;
+.tit img{
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   margin: 30px auto;
+   margin-right: 30px;
 }
 
-.tit > h1:hover{
-    font-size: 65px;
-    color: #ff3613;
-    transition: 0.7s;
-    text-shadow: 10px 10px 10px #000000;
+
+.tit:hover #img1{
+    width: 0px;
+    height: 0px;
+    position: absolute;
 }
+
+
+
+.tit:hover #img2{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 30px auto;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    transition: 2s;
+    position: relative;
+    box-shadow: 5px 5px 10px #3c3a3a;
+}
+
+#img2{
+    height: 0px;
+    width: 0px;
+    position: absolute;
+}
+
+
 
 .tit p{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: #161466;
-    margin-top: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #ffffff;
     padding: 10px;
+    margin: 50px auto;
+    margin-left: 20px;
+}
+
+
+.tit:hover p {
+    color: #000000;
+    font-size: 38px;
+    transition: 2s;
 }
 
 
@@ -54,8 +91,7 @@ html, body{
     width: 500px;
     text-align: center;
     list-style: none;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
     padding: 10px 20px;
 }
 
@@ -129,7 +165,6 @@ html, body{
 
 .descricao{
     font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding:10px 5px ;
     margin-bottom: 20px;
@@ -145,7 +180,6 @@ html, body{
 
 .pagamento{
     color: #666666;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 10px 5px;
 }
 
