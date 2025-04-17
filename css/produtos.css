@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+
+
+
+
 .main-p{
     width: 80%;
     height: 70%;
@@ -32,15 +44,18 @@
 
 .preco-prod{
     width: 100%;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 15px ;
     padding: 30px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .preco-prod h1{
     color: #ffffff;
     text-align: center;
     font-size: 50px;
+    
 
 }
 
@@ -51,16 +66,60 @@
 
 
 .descricao-prod{
-    width: 80%;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 20px;
     color: #ffffff;
-
 }
 
 .descricao-prod h1{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.p-descricao{
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    transition: all 0.8s ease-in-out ;
+
+}
+
+.h-descricao{
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
 }
 
 
+
+.carrinho{
+    width: 50%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 50%;
+    height: 50px;
+    background-color: #333333;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 30px auto;
+    border-radius: 20px;
+    transition: all 0.8s ease-in-out;
+}
+
+button:hover{
+    font-size: 25px;
+    background-color: #444444;
+    width: 100%;
+}
