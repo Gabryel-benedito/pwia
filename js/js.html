@@ -24,12 +24,19 @@
 
     */
 
+
+
+
     /* for(var i = 0; i < 10; i++){
 
         //alert("For rodada  " + i)
         document.write("For rodada  " + i + "<br>")
     } */
 
+
+
+
+    /*
     var t = parseInt(prompt("Digite o numero da tabuada"))
 
     for(var i = 0 ; i <= 10 ; i++ ){
@@ -38,5 +45,29 @@
 
         document.write(t + " x " +  i + " = " + r + "<br>")
     }
+    */
+
+    function cliqueBotao() {
+        MostrarAlerta(somar(prompt("Digite o primeiro número") , prompt("Digite o segundo número")))
+    }
+
+    function MostrarAlerta(texto) {        
+        alert(texto)
+    }
+
+    function somar(n1, n2) {
+        var soma = Number(n1) + Number(n2)
+
+        return soma
+    }
+
+/*  MostrarAlerta("Hello world")
+    MostrarAlerta(prompt("Digite algo"))
+*/
+
+
 
 </script>
+
+
+<button onclick="cliqueBotao()" >somar</button>
