@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" placeholder="Numero 1" name="n2" id="n1">
+
+    <input type="text" placeholder="Numero 2" name="n2" id="n2">
+
+    <br>
+
+    <button id="soma">+</button>
+    <button id="menos">-</button>
+    <button id="multi">x</button>
+    <button id="divi">:</button>
+
+
+
+
+    <script>
+
+        var n1 = document.getElementById("n1")
+        var n2 = document.getElementById("n2")
+
+        var soma = document.getElementById("soma")
+        var multi = document.getElementById("multi")
+        var divi = document.getElementById("divi")
+        var menos = document.getElementById("menos")
+
+        function Somar() {
+
+            soma.style.backgroundColor = "red"
+
+            alert(Number(n1.value) + Number(n2.value))
+
+
+        }
+
+        function multiplica() {
+
+            multi.style.backgroundColor = "purple"
+
+            alert(Number(n1.value) * Number(n2.value))
+        }
+
+        function dividi() {
+
+            divi.style.backgroundColor = "yellow"
+
+            alert(Number(n1.value) / Number(n2.value))
+        }
+
+        function subtrai() {
+
+            menos.style.backgroundColor = "orange"
+
+            alert(Number(n1.value) - Number(n2.value))
+        }
+
+        soma.addEventListener("click", Somar)
+        multi.addEventListener("click", multiplica)
+        divi.addEventListener("click", dividi)
+        menos.addEventListener("click", subtrai)
+
+
+    </script>
+
+</body>
+
+</html>
