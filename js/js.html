@@ -1,73 +1,90 @@
-<script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
 
-    /*
-    var altura = 20
-    var largura = 10
 
-    if(altura > largura){
-        alert("altura é maior que largura")
-    }else {
-        alert("largura é maior que altura")
-    }*/
+    <button onclick="cliqueBotao()" >somar</button>
+    
 
-    /*
-    var idade = prompt("Digite sua idade")
+    <script>
 
-    if(idade >= 18){
-        alert("Voce pode dirigir e votar ")
-
-    }else if(idade >= 16 && idade < 18){
-        alert("Voce pode votar mas nao pode dirigir ")
-    }else {
-        alert("Voce nao pode dirigir e nem votar")
-    }
-
+        /*
+        var altura = 20
+        var largura = 10
+    
+        if(altura > largura){
+            alert("altura é maior que largura")
+        }else {
+            alert("largura é maior que altura")
+        }*/
+    
+        /*
+        var idade = prompt("Digite sua idade")
+    
+        if(idade >= 18){
+            alert("Voce pode dirigir e votar ")
+    
+        }else if(idade >= 16 && idade < 18){
+            alert("Voce pode votar mas nao pode dirigir ")
+        }else {
+            alert("Voce nao pode dirigir e nem votar")
+        }
+    
+        */
+    
+    
+    
+    
+        /* for(var i = 0; i < 10; i++){
+    
+            //alert("For rodada  " + i)
+            document.write("For rodada  " + i + "<br>")
+        } */
+    
+    
+    
+    
+        /*
+        var t = parseInt(prompt("Digite o numero da tabuada"))
+    
+        for(var i = 0 ; i <= 10 ; i++ ){
+            
+            var r = t * i
+    
+            document.write(t + " x " +  i + " = " + r + "<br>")
+        }
+        */
+    
+        function cliqueBotao() {
+            MostrarAlerta(somar(prompt("Digite o primeiro número") , prompt("Digite o segundo número")))
+        }
+    
+        function MostrarAlerta(texto) {        
+            alert(texto)
+        }
+    
+        function somar(n1, n2) {
+            var soma = Number(n1) + Number(n2)
+    
+            return soma
+        }
+    
+    /*  MostrarAlerta("Hello world")
+        MostrarAlerta(prompt("Digite algo"))
     */
-
-
-
-
-    /* for(var i = 0; i < 10; i++){
-
-        //alert("For rodada  " + i)
-        document.write("For rodada  " + i + "<br>")
-    } */
-
-
-
-
-    /*
-    var t = parseInt(prompt("Digite o numero da tabuada"))
-
-    for(var i = 0 ; i <= 10 ; i++ ){
-        
-        var r = t * i
-
-        document.write(t + " x " +  i + " = " + r + "<br>")
-    }
-    */
-
-    function cliqueBotao() {
-        MostrarAlerta(somar(prompt("Digite o primeiro número") , prompt("Digite o segundo número")))
-    }
-
-    function MostrarAlerta(texto) {        
-        alert(texto)
-    }
-
-    function somar(n1, n2) {
-        var soma = Number(n1) + Number(n2)
-
-        return soma
-    }
-
-/*  MostrarAlerta("Hello world")
-    MostrarAlerta(prompt("Digite algo"))
-*/
-
-
-
-</script>
-
-
-<button onclick="cliqueBotao()" >somar</button>
+    
+    
+    
+    </script>
+    
+    
+   
+    
+</body>
+</html>
