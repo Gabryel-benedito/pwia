@@ -10,7 +10,7 @@
 
 <body>
 
-    <form action="salvar.html" method="post">
+    <form action="salvar.html" method="post" id="form"  onsubmit="return validarFormulario()">
          <label>Cep</label>
         <input type="text" name="cep" id="cep" class="campo"> <br>
 
@@ -31,6 +31,46 @@
 
         <button id="botao" class="botao" type="submit"> Enviar Dados </button>
     </form>
+
+
+
+    <script>
+
+        var form = document.getElementById('form')
+        var cep = document.getElementById('cep')
+        var endereco = document.getElementById('endereco')
+        var numero = document.getElementById('numero')
+        var bairro = document.getElementById('bairro')
+        var cidade = document.getElementById('cidade')
+        var estado = document.getElementById('estado')
+        
+
+        function validarFormulario(){
+
+
+            
+
+
+            if(cep.value == ""){
+                alert('Campo cep não pode ficar em branco')
+                cep.style.border = '2px solid red'
+                return false
+            }
+
+        }
+
+
+        function validarTexto(){
+            console.log(cep.style.border)
+
+            if(cep.style.border != ""){
+                cep.style.border = ""
+            }
+        }
+
+        cep.addEventListener("keydown" , validarTexto)
+
+    </script>
 
 </body>
 
