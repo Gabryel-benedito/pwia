@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Elementos</title>
+</head>
+
+<body>
+
+    <h1>Criação de Elementos</h1>
+
+
+    <label for="cor"> Escolha uma cor </label> <br>
+    <input type="color" id="cor" name="cor"> <br> <br>
+
+    <label for="tag"> Escolha uma tag </label> <br>
+    <input type="text" id="tag" name="tag"> <br><br>
+
+    <label for="texto">Digite o texto</label>
+    <input type="text" id="texto" name="texto">
+
+    <div id="caixa">
+        <button id="botao"> gerar elemento</button>
+    </div>
+
+    <script>
+        var tag = document.getElementById("tag")
+        var texto = document.getElementById("texto")
+        var botao = document.getElementById("botao")
+        var div = document.getElementById("caixa")
+        var cor = document.getElementById("cor")
+
+        function criarElemento() {
+
+            for (i = 0; i <= 10; i++) {
+
+                var novoH1 = document.createElement(tag.value)
+                novoH1.style.backgroundColor = cor.value
+                novoH1.style.color = '#ffffff'
+                novoH1.style.textAlign = 'center'
+                novoH1.style.display = 'block'
+                novoH1.id = "titulo"
+                novoH1.classList.add("primeiroTitulo")
+                novoH1.innerText = texto.value + " - " + i
+                div.append(novoH1)
+
+                console.log(novoH1)
+            }
+
+
+
+            console.log(botao)
+            
+
+        }
+
+        botao.addEventListener("click", criarElemento)
+    </script>
+
+</body>
+
+</html>

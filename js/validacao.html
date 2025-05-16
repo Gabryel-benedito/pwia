@@ -55,8 +55,34 @@
                 alert('Campo cep não pode ficar em branco')
                 cep.style.border = '2px solid red'
                 return false
+            }else if(endereco.value == ""){
+                alert('Campo endereço não pode ficar em branco')
+                endereco.style.border = '2px solid red'
+                return false
+            }else if(numero.value == ""){
+                alert('Campo numero não pode ficar em branco')
+                numero.style.border = '2px solid red'
+                return false
+            }else if(bairro.value == ""){
+                alert('Campo bairro não pode ficar em branco')
+                bairro.style.border = '2px solid red'
+                return false
+            }else if(cidade.value == ""){
+                alert('Campo endereço não pode ficar em branco')
+                cidade.style.border = '2px solid red'
+                return false
+            }else if(estado.value == ""){
+                alert('Campo estado não pode ficar em branco')
+                estado.style.border = '2px solid red'
+                return false
             }
 
+
+
+
+
+
+            
         }
 
 
@@ -65,6 +91,26 @@
 
             if(cep.style.border != ""){
                 cep.style.border = ""
+            }
+
+            if(endereco.style.border != ""){
+                endereco.style.border = ""
+            }
+
+            if(numero.style.border != ""){
+                numero.style.border = ""
+            }
+
+            if(bairro.style.border != ""){
+                bairro.style.border = ""
+            }
+
+            if(cidade.style.border != ""){
+                cidade.style.border = ""
+            }
+
+            if(estado.style.border != ""){
+                estado.style.border = ""
             }
         }
 
