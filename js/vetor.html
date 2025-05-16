@@ -23,7 +23,11 @@
 
         function adicionarImagens(){
             var item = document.createElement("li")
-            item.innerText = texto.value
+            var img = document.createElement("img")
+            img.src = texto.value
+            img.height =  150
+            img.width = 150
+            item.append(img)
             imagens.append(item)
 
             console.log(item)
