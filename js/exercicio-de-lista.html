@@ -49,15 +49,27 @@
         }
 
         function retiraCores(){
+            
             cores.pop()
             cores.shift()
+
+            cores.reverse
 
             console.log(cores)
         }
 
+
         cor.addEventListener("click", mostrarCor)
         Maiscores.addEventListener("click" , adicionaCor)
         retira.addEventListener("click" , retiraCores)
+
+
+        var numeros = [1, 2, 3]
+        numeros.push(4)
+        numeros.unshift(0)
+        console.log(numeros)
+        numeros.reverse()
+        console.log(numeros)
     </script>
 
 </body>
