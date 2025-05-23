@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Lista</title>
+</head>
+<body>
+    
+    <button id="cor">mostrar cor</button>
+    <button id="Maiscores" >Adicionar Amarelo e Preto</button>
+    <button id="retira">retirar Novas cores</button>
+    <div id="caixa" > </div>
+
+
+
+    <script>
+        var cor = document.getElementById("cor")
+        var retira = document.getElementById("retira")
+        var Maiscores = document.getElementById("Maiscores")
+        var caixa = document.getElementById("caixa")
+        var cores = ["green", "red" , "orange"]
+
+        function mostrarCor(){
+            cores.forEach( (x) => {
+
+                caixa.style.width = "600px"
+                caixa.style.margin = "0 auto"
+                caixa.style.display = "flex"
+                caixa.style.flexWrap = "wrap"
+                var item = document.createElement("div")
+                item.style.height = "100px"
+                item.style.width = "100px"
+                item.style.margin = "40px auto"
+                item.style.backgroundColor = x
+                caixa.append(item)
+
+                console.log(x)
+            } )
+
+            
+        }
+
+        function adicionaCor(){
+            cores.push("yellow")
+            cores.unshift("black")
+            console.log(cores)
+        }
+
+        function retiraCores(){
+            cores.pop()
+            cores.shift()
+
+            console.log(cores)
+        }
+
+        cor.addEventListener("click", mostrarCor)
+        Maiscores.addEventListener("click" , adicionaCor)
+        retira.addEventListener("click" , retiraCores)
+    </script>
+
+</body>
+</html>

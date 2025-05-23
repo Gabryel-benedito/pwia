@@ -71,7 +71,7 @@
 
             lista.forEach(
                 (valor, indice) => {
-                    document.write("<br><br> Indice " + indice + " Valor é: " + valor + " <br><br>")
+                    document.write("<br> Indice " + indice + " Valor é: " + valor + " <br>")
                 }
             )
         }
@@ -86,6 +86,7 @@
         nomes.push("Joaquim do final da lista") //adiciona no final da lista
         exibirLista(nomes)
         nomes.pop() //remove no final da lista
+        nomes.reverse()
         exibirLista(nomes)
 
 
