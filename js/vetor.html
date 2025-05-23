@@ -9,7 +9,8 @@
 <body>
 
     <input type="text" name="texto" id="texto" >
-    <button id="botao" > adicionar  </button>    
+    <button id="botao" > adicionar  </button>
+
 
     <ul id="ListaImagens">
 
@@ -40,9 +41,9 @@
 
         var nomes = ["Barreto", "JM", "JV" , "Tocchetto", "Gabryel", "Fernando", "Julio", "Maria Clara", "Cristiano Ronaldo", "Neymar", "Lucas Moura", "Oscar", "Antony", "Casemiro", "Mario"]
        
-       for(var i = 0; i < nomes.length; i++){
+       /*for(var i = 0; i < nomes.length; i++){
            document.write("<br> <br>" + i + ' -  ' + nomes[i])
-       }
+       }*/
        
        
         console.log(  + nomes.length + "\t\t\t ------------------------------- \n\n\t\t\t\t\t" + nomes[numMaximo(nomes.length)] )
@@ -51,6 +52,42 @@
         function numMaximo(numeroMaximo){
             return Math.floor(Math.random() * numeroMaximo)
         }
+
+
+        /*nomes.forEach(  (valor, indice) => {
+                document.write("\n\n Indice " + indice + " Valor é: " + valor + " <br><br>")
+            }  
+        )
+
+        document.write("<br <br>")
+
+        nomes.forEach(  (valor, indice) => {
+                document.write("\n\n Indice " + indice + " Valor é: " + valor + " <br><br>")
+            }  
+        )*/
+
+        function exibirLista(lista){
+            document.write("<hr>")
+
+            lista.forEach(
+                (valor, indice) => {
+                    document.write("<br><br> Indice " + indice + " Valor é: " + valor + " <br><br>")
+                }
+            )
+        }
+
+        exibirLista(nomes)
+        nomes.reverse() //inverte a ordem da lista
+        exibirLista(nomes)
+        nomes.unshift("Novo nome no inicio da lista")
+        exibirLista(nomes)
+        nomes.shift() // remove no começo da lista
+        exibirLista(nomes)
+        nomes.push("Joaquim do final da lista") //adiciona no final da lista
+        exibirLista(nomes)
+        nomes.pop() //remove no final da lista
+        exibirLista(nomes)
+
 
     </script>
     
