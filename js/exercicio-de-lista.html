@@ -2,74 +2,67 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicios de Lista</title>
 </head>
 <body>
     
-    <button id="cor">mostrar cor</button>
-    <button id="Maiscores" >Adicionar Amarelo e Preto</button>
-    <button id="retira">retirar Novas cores</button>
-    <div id="caixa" > </div>
-
 
 
     <script>
-        var cor = document.getElementById("cor")
-        var retira = document.getElementById("retira")
-        var Maiscores = document.getElementById("Maiscores")
-        var caixa = document.getElementById("caixa")
-        var cores = ["green", "red" , "orange"]
+        var cores = ["azul", "vermelho", "verde"];
+        console.log(cores);
 
-        function mostrarCor(){
-            cores.forEach( (x) => {
+        cores.push("amarelo");
+        cores.unshift("preto");
+        console.log(cores);
+        cores.shift();
+        cores.reverse();
+        console.log(cores);
 
-                caixa.style.width = "600px"
-                caixa.style.margin = "0 auto"
-                caixa.style.display = "flex"
-                caixa.style.flexWrap = "wrap"
-                var item = document.createElement("div")
-                item.style.height = "100px"
-                item.style.width = "100px"
-                item.style.margin = "40px auto"
-                item.style.backgroundColor = x
-                caixa.append(item)
+        var numeros = [1, 2, 3];
+        console.log(numeros);
+        numeros.push(4);
+        numeros.unshift(0);
+        numeros.reverse();
+        console.log(numeros);
 
-                console.log(x)
-            } )
+        var tarefas = ["estudar", "trabalhar", "dormir"];
+        console.log(tarefas);
+        tarefas.push("comer");
+        tarefas.push("lavar louça");
+        tarefas.push("Programar");
+        console.log(tarefas);
+        tarefas.pop();
+        console.log(tarefas);
 
-            
+        var nomes = ["Lucas", "Ana", "Pedro"];
+        console.log(nomes);
+        nomes.unshift("Maria");
+        nomes.unshift("João");
+        console.log(nomes);
+        nomes.pop();
+        console.log(nomes);
+
+        var n1 =[]
+
+        for (var i = 1; i <= 5; i++) {
+            n1.unshift(i);
         }
 
-        function adicionaCor(){
-            cores.push("yellow")
-            cores.unshift("black")
-            console.log(cores)
+        console.log(n1);
+
+        var n2 = [];
+        for (var i = 1; i <= 75; i++) {
+            n2.push(i);
         }
 
-        function retiraCores(){
-            
-            cores.shift()
-
-            cores.reverse
-
-            console.log(cores)
+        for(var i = 0; i < 25; i++){
+            n2.shift();
         }
 
+        console.log(n2);
 
-        cor.addEventListener("click", mostrarCor)
-        Maiscores.addEventListener("click" , adicionaCor)
-        retira.addEventListener("click" , retiraCores)
-
-
-        var numeros = [1, 2, 3]
-        numeros.push(4)
-        numeros.unshift(0)
-        console.log(numeros)
-        numeros.reverse()
-        console.log(numeros)
     </script>
-
 </body>
 </html>
