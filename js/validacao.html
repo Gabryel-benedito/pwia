@@ -43,6 +43,31 @@
         var bairro = document.getElementById('bairro')
         var cidade = document.getElementById('cidade')
         var estado = document.getElementById('estado')
+
+
+
+        function Clicar() {
+            var input = document.getElementById("cep")
+
+            var url = "https://viacep.com.br/ws/" + input.value + "/json/"
+            fetch(url)
+                .then(response => response.json())
+                .then(dados => {
+                    var cep = document.getElementById('cep')
+                    var endereco = document.getElementById('endereco')
+                    var numero = document.getElementById('numero')
+                    var bairro = document.getElementById('bairro')
+                    var cidade = document.getElementById('cidade')
+                    var estado = document.getElementById('estado')
+                    endereco.value = dados.logradouro
+                    bairro.value = dados.bairro
+                    cidade.value = dados.localidade
+                    estado.value = dados.estado
+                }
+                )
+                .catch(error => console.error('Erro:', error));
+        }
+
         
 
         function validarFormulario(){
