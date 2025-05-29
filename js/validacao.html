@@ -1,50 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Endereço</title>
 </head>
 
 <body>
-
-    <form action="salvar.html" method="post" id="form"  onsubmit="return validarFormulario()">
-         <label>Cep</label>
-        <input type="text" name="cep" id="cep" class="campo"> <br>
-
-        <label>Endereco</label>
-        <input type="text" name="endereco" id="endereco" class="campo"> <br>
-
+    <form onsubmit="return validarFormulario()" action="salvar.html" method="post">
+        <label>Cep</label>
+        <input onkeydown="ValidarTexto()" type="text" name="cep" id="cep" class="campo" />
+        <button id="" type="button" onclick="Clicar()">
+            Consultar o cep
+        </button>
+        <br><br>
+        <label>Endereço</label>
+        <input type="text" name="endereco" id="endereco" class="campo" /> <br><br>
         <label>Número</label>
-        <input type="text" name="numero" id="numero" class="campo"> <br>
-
+        <input type="text" name="numero" id="numero" class="campo" /><br><br>
         <label>Bairro</label>
-        <input type="text" name="bairro" id="bairro" class="campo"> <br>
-
+        <input type="text" name="bairro" id="bairro" class="campo" /><br><br>
         <label>Cidade</label>
-        <input type="text" name="cidade" id="cidade" class="campo"> <br>
-
+        <input type="text" name="cidade" id="cidade" class="campo" /> <br><br>
         <label>Estado</label>
-        <input type="text" name="estado" id="estado" class="campo"> <br>
-
-        <button id="botao" class="botao" type="submit"> Enviar Dados </button>
+        <input type="text" name="estado" id="estado" class="campo" /> <br><br>
+        <button id="botao" class="botao" type="submit">
+            Enviar dados
+        </button>
     </form>
 
-
-
     <script>
-
-        var form = document.getElementById('form')
-        var cep = document.getElementById('cep')
-        var endereco = document.getElementById('endereco')
-        var numero = document.getElementById('numero')
-        var bairro = document.getElementById('bairro')
-        var cidade = document.getElementById('cidade')
-        var estado = document.getElementById('estado')
-
-
 
         function Clicar() {
             var input = document.getElementById("cep")
@@ -68,81 +54,30 @@
                 .catch(error => console.error('Erro:', error));
         }
 
-        
+        function validarFormulario() {
+            var cep = document.getElementById('cep')
+            var endereco = document.getElementById('endereco')
+            var numero = document.getElementById('numero')
+            var bairro = document.getElementById('bairro')
+            var cidade = document.getElementById('cidade')
+            var estado = document.getElementById('estado')
 
-        function validarFormulario(){
-
-
-            
-
-
-            if(cep.value == ""){
-                alert('Campo cep não pode ficar em branco')
+            if (cep.value == "") {
+                alert('campo cep não pode ficar em branco')
                 cep.style.border = '2px solid red'
-                return false
-            }else if(endereco.value == ""){
-                alert('Campo endereço não pode ficar em branco')
-                endereco.style.border = '2px solid red'
-                return false
-            }else if(numero.value == ""){
-                alert('Campo numero não pode ficar em branco')
-                numero.style.border = '2px solid red'
-                return false
-            }else if(bairro.value == ""){
-                alert('Campo bairro não pode ficar em branco')
-                bairro.style.border = '2px solid red'
-                return false
-            }else if(cidade.value == ""){
-                alert('Campo endereço não pode ficar em branco')
-                cidade.style.border = '2px solid red'
-                return false
-            }else if(estado.value == ""){
-                alert('Campo estado não pode ficar em branco')
-                estado.style.border = '2px solid red'
-                return false
+                return false;
             }
 
-
-
-
-
-
-            
         }
 
-
-        function validarTexto(){
+        function ValidarTexto() {
+            var cep = document.getElementById('cep')
             console.log(cep.style.border)
-
-            if(cep.style.border != ""){
+            if (cep.style.border != "") {
                 cep.style.border = ""
             }
-
-            if(endereco.style.border != ""){
-                endereco.style.border = ""
-            }
-
-            if(numero.style.border != ""){
-                numero.style.border = ""
-            }
-
-            if(bairro.style.border != ""){
-                bairro.style.border = ""
-            }
-
-            if(cidade.style.border != ""){
-                cidade.style.border = ""
-            }
-
-            if(estado.style.border != ""){
-                estado.style.border = ""
-            }
         }
-
-        cep.addEventListener("keydown" , validarTexto)
-
     </script>
-
 </body>
 
 </html>
