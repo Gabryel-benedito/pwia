@@ -10,7 +10,7 @@ function gerarPokemon(){
     .then((dados) => {
 
         nome.value = dados.name
-        img.src = dados.sprites.front_default
+        img.src = dados.sprites.other.showdown.front_default
         img.style.height = "200px"
         img.style.width = "200px"
     })
