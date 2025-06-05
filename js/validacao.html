@@ -11,7 +11,7 @@
     <form onsubmit="return validarFormulario()" action="salvar.html" method="post">
         <label>Cep</label>
         <input onkeydown="ValidarTexto()" type="text" name="cep" id="cep" class="campo" />
-        <button id="" type="button" onclick="Clicar()">
+        <button id="cep-v" type="button" onclick="Clicar()">
             Consultar o cep
         </button>
         <br><br>
@@ -33,12 +33,12 @@
     <script>
 
         function Clicar() {
-            var input = document.getElementById("cep")
+            var input = document.getElementById("cep-v")
 
             var url = "https://viacep.com.br/ws/" + input.value + "/json/"
             fetch(url)
                 .then(response => response.json())
-                .then(dados => {
+                .then((dados) => {
                     var cep = document.getElementById('cep')
                     var endereco = document.getElementById('endereco')
                     var numero = document.getElementById('numero')
