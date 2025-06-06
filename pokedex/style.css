@@ -5,11 +5,19 @@ body{
 
 main{
     width: 100%;
+    height: 100vh;
     justify-items: center;
     align-items: center;
 }
 
-.conteirner{
-    width: 70%;
+.conteiner{
+    width: 100%;
+    height: 100%;
     margin: 70px auto;
+}
+
+
+.pokemon{
+    background-color: transparent;
+    border: 0px;
 }
