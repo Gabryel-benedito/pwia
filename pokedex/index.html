@@ -12,16 +12,20 @@
     <main>
         <div class="conteiner" id="cont">
 
-            <input id="pk">
+            <input id="pk" type="text" placeholder="Nome ou ID do Pokémon"><br>
             <button id="but"> Buscar Pokemon </button> <br>
-            <input type="text" id="nome" ><br>
-            <input id="tipo1" type="text">
-            <input id="tipo2" type="text">
+            <input type="text" id="nome" placeholder="Nome do pokemon" ><br>
 
-            <button class="pokemon"><img src="" id="img" alt=""></button>
-            <img src="" id="mega" alt="">
+            <div class="tipos">
+                <input id="tipo1" type="text" class="tipos">
+                <input id="tipo2" type="text" class="tipos">
+            </div>
+
+            <img id="img" alt="" src="" title="Clique para alternar a imagem" />
+            <img src="" id="mega" alt="" title="Clique para alternar a imagem">
+            <button id="but-mega"> Mega evoluir</button>
             <img src="" id="gmax" alt="">
-            
+
         </div>
 
     </main>
