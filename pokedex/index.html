@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,44 @@
     <link rel="stylesheet" href="style.css">
     <title>Pokedex</title>
 </head>
+
 <body>
 
     <main>
-        <div class="conteiner" id="cont">
 
-            <input id="pk" type="text" placeholder="Nome ou ID do Pokémon"><br>
-            <button id="but"> Buscar Pokemon </button> <br>
-            <input type="text" id="nome" placeholder="Nome do pokemon" ><br>
+ 
 
-            <div class="tipos">
-                <input id="tipo1" type="text" class="tipos">
-                <input id="tipo2" type="text" class="tipos">
+
+       
+       
+
+        <div class="card" id="cont">
+            <input type="text" class="texto" id="nome" >
+            <div id="caixa">
+                
+                <img id="img" alt="" src="" title="Clique para alternar a imagem"  >
+    
+                <img src="" id="mega" alt="" title="Clique para alternar a imagem">
+            </div>
+    
+            <button id="but-mega"><img id="pedra" src="" alt=""></button>
+
+            <div class="inputs">
+                <input id="pk" type="text" class="texto" placeholder="Nome ou ID do Pokémon"><br>
+                
             </div>
 
-            <img id="img" alt="" src="" title="Clique para alternar a imagem" />
-            <img src="" id="mega" alt="" title="Clique para alternar a imagem">
-            <button id="but-mega"> Mega evoluir</button>
-            <img src="" id="gmax" alt="">
+            <div class="tipos">
+                <input id="tipo1" class="texto" type="text" class="tipos">
+                <input id="tipo2" class="texto" type="text" class="tipos">
+            </div>
 
         </div>
 
     </main>
-    
+
 
     <script src="js.js"></script>
 </body>
+
 </html>
